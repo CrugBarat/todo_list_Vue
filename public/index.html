@@ -20,17 +20,20 @@
         </div>
         <div class="radio-submit-container">
           <div class="radio-submit">
-            <label for="high"><input id="high" type="radio" value="high" v-model="priority"><img class="radio-img" src="css/images/high.png"></label>
-            <label for="low"><input id="low" type="radio" value="low" v-model="priority"><img class="radio-img" src="css/images/low.png"></label>
+            <label for="high"><input id="high" type="radio" value="high" v-model="priority" name="priority" required><img class="radio-img" src="css/images/high.png"></label>
+            <label for="low"><input id="low" type="radio" value="low" v-model="priority" name="priority" required><img class="radio-img" src="css/images/low.png"></label>
             <input class="add-button" type="image" src="css/images/add.png" alt="submit">
           </div>
         </div>
       </form>
     </div>
-    <div class="btns">
-      <button v-for="(todo, index) in todos"><span>{{todo.name}}</span></button>
+    <div class="list-container">
+      <div class="list">
+        <button v-for="(todo, index) in todos" v-bind:class="todo.priority ? 'high' : 'low'">
+          <span>{{todo.name}}</span>
+        </button>
+      </div>
     </div>
-
   </div>
 </body>
 </html>

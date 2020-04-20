@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     methods: {
       saveNewToDo: function() {
+        if (this.priority === 'high') {
+          this.priority = true
+        } else {
+          this.priority = false
+        }
         const toDoToAdd = {
           name: this.newToDo,
           priority: this.priority

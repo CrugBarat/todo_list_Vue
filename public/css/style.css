@@ -1,5 +1,6 @@
 * {
   cursor: url('./images/pencil.png'), auto;
+  overflow: hidden;
 }
 
 body {
@@ -82,4 +83,35 @@ input[type="text"] {
 
 input:focus {
   outline: none;
+}
+
+.list-container {
+  width: 100vw;
+  height: 400px;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+.list {
+  width: 840px;
+  height: 310px;
+  display: inline-block;
+}
+
+button {
+  background: none;
+  border: dashed 5px #000;
+  height: auto;
+  font-size: 40px;
+  font-family: 'Amatic SC', cursive;
+  padding: 5px;
+}
+
+button.high {
+  border: dashed 5px #4690B0;
+}
+
+button.low {
+  border: dashed 5px #fa9953;
 }
