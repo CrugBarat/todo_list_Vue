@@ -4,13 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
   <script src="./js/bundle.js"></script>
   <title>Document</title>
 </head>
 <body>
   <div id="app">
     <h1>ToDo's</h1>
-
+    <form v-on:submit.prevent="saveNewToDo">
+      <input type="text" name="todo" id="enterToDo" placeholder="Enter ToDo..." v-model="newToDo">
+      <label for="high">High</label>
+      <input id="high" type="radio" value="high" v-model="priority">
+      <label for="low">Low</label>
+      <input id="low" type="radio" value="low" v-model="priority">
+      <input type="submit" value="Save Item">
+    </form>
+    <div class="btns">
+      <button v-for="(todo, index) in todos"><span>{{todo.name}}</span></button>
+    </div>
 
   </div>
 </body>
