@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     el: "#app",
     data: {
       todos: [],
-      newToDo: "",
-      priority: ""
+      newToDo: ""
     },
     methods: {
       saveNewToDo: function() {
