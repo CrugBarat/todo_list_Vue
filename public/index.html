@@ -29,7 +29,7 @@
     </div>
     <div class="list-container">
       <div class="list">
-        <button v-for="(todo, index) in todos" v-bind:class="todo.priority ? 'high' : 'low'">
+        <button v-for="(todo, index) in todos" v-bind:class="todo.priority ? 'high' : 'low'" v-on:click="deleteToDo">
           <span>{{todo.name}}</span>
         </button>
       </div>

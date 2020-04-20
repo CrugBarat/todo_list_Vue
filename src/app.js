@@ -12,16 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
     methods: {
       saveNewToDo: function() {
         if (this.priority === 'high') {
-          this.priority = true
+          this.priority = true;
         } else {
-          this.priority = false
+          this.priority = false;
         }
         const toDoToAdd = {
           name: this.newToDo,
           priority: this.priority
         }
         this.todos.push(toDoToAdd);
-        this.newToDo = ""
+        this.newToDo = "";
+      },
+      deleteToDo: function (index) {
+        this.todos.pop(index);
       }
     },
   });
