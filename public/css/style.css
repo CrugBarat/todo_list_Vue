@@ -31,17 +31,41 @@ h1 {
 }
 
 .add-button {
-  height: 30px;
+  height: 42px;
 }
 
 .radio-img {
-  height: 30px;
+  width: 35px;
 }
 
+.radio-submit-container {
+  width: 310px;
+  height: 55px;
+  display: inline-block;
+}
 
+.radio-submit {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
 
-input[type="radio"] {
+input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
+input[type=radio]:checked + .radio-img {
+  background: #fff;
+  border: solid 3px;
+  border-radius: 50%;
+}
+
+input[type=image]:hover {
+  background: #7ed967;
+  border-radius: 50%;
 }
 
 label {

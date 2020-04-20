@@ -16,14 +16,14 @@
     <div class="form-container">
       <form v-on:submit.prevent="saveNewToDo">
         <div class="text-input">
-          <input type="text" name="todo" id="enterToDo" placeholder="Enter ToDo..." v-model="newToDo">
+          <input type="text" name="todo" id="enterToDo" placeholder="Enter ToDo..." v-model="newToDo" required>
         </div>
-        <div class="radio-submit">
-          <label for="high"><img class="radio-img" src="css/images/high.png"></label>
-          <input id="high" type="radio" value="high" v-model="priority">
-          <label for="low"><img class="radio-img" src="css/images/low.png"></label>
-          <input id="low" type="radio" value="low" v-model="priority">
-          <input class="add-button" type="image" src="css/images/add.png" alt="submit">
+        <div class="radio-submit-container">
+          <div class="radio-submit">
+            <label for="high"><input id="high" type="radio" value="high" v-model="priority"><img class="radio-img" src="css/images/high.png"></label>
+            <label for="low"><input id="low" type="radio" value="low" v-model="priority"><img class="radio-img" src="css/images/low.png"></label>
+            <input class="add-button" type="image" src="css/images/add.png" alt="submit">
+          </div>
         </div>
       </form>
     </div>
