@@ -1,4 +1,4 @@
-<img src="https://github.com/CrugBarat/my_files/blob/master/todo1.jpeg" width="300"> <img src="https://github.com/CrugBarat/my_files/blob/master/todo2.jpeg" width="300"> <img src="https://github.com/CrugBarat/my_files/blob/master/todo3.jpeg" height="180">
+<img src="https://github.com/CrugBarat/my_files/blob/master/todo1.jpeg" width="300"> <img src="https://github.com/CrugBarat/my_files/blob/master/todo2.jpeg" width="300"> <img src="https://github.com/CrugBarat/my_files/blob/master/todo3.jpeg" width="300">
 
 
 # Todo List
