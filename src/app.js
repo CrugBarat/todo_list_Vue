@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       deleteToDo: function (index) {
         this.todos.pop(index);
+        alert('Great! ToDo Completed!');
       }
     },
   });

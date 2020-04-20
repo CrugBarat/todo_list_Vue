@@ -116,3 +116,7 @@ button.high {
 button.low {
   border: dashed 5px #fa9953;
 }
+
+button:hover {
+  background: #74d9d6;
+}
