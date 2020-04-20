@@ -91,14 +91,12 @@ input:focus {
   margin: 0;
   display: block;
   text-align: center;
-  border-style: solid;
 }
 
 .list {
   width: 81vw;
   height: 50vh;
   display: inline-block;
-  border-style: solid;
 }
 
 button {
