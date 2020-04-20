@@ -105,7 +105,8 @@ button {
   height: auto;
   font-size: 40px;
   font-family: 'Amatic SC', cursive;
-  padding: 5px;
+  padding: 7px;
+  margin: 5px;
 }
 
 button.high {
